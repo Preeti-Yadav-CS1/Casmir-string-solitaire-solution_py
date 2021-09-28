@@ -1,0 +1,19 @@
+// codeforces solution casmir string solitaire python3
+n=int(input())
+while(n>0):
+    s=input()
+    a=0
+    b=0
+    c=0
+    for i in range(len(s)):
+        if s[i]=='A':
+            a+=1
+        elif(s[i]=='B'):
+            b+=1
+        else:
+            c+=1
+    if(a+c==b):
+        print("YES")
+    else:
+        print("NO")
+    n-=1
